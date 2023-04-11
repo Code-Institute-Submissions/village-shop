@@ -1,0 +1,14 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.welcome-banner {
+    background-color: black;
+    height: 175px;
+    padding: 50px 10px;
+}
+
+.welcome {
+    color: white;
+}
