@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
 html, body {
     max-width: 100%;
     overflow-x: hidden;
@@ -5,10 +7,18 @@ html, body {
 
 .welcome-banner {
     background-color: black;
-    height: 175px;
-    padding: 50px 10px;
+    height: 120px;
+    padding: 30px 10px;
 }
 
 .welcome {
     color: white;
+    font-family: 'Prata', 'Times New Roman', Times, serif;
+}
+
+#banner {
+    height: 250px;
+    width: 100vw;
+    object-fit: cover;
+    object-position: right 90%;
 }
