@@ -1,0 +1,405 @@
+[
+    {
+      "pk": 1,
+      "model": "products.product",
+      "fields": {
+        "sku": "gr246810001",
+        "name": "Apples",
+        "description": "Variety in stock from Jones Orchard in Llanlas, only 20 miles away. Price per apple.",
+        "price": 0.50,
+        "category": 2,
+        "image_url": "https://pxhere.com/en/photo/781337",
+        "image": "apples.jpg"
+      }
+    },
+    {
+      "pk": 2,
+      "model": "products.product",
+      "fields": {
+        "sku": "gr246810002",
+        "name": "Jones Orchard Apple Juice",
+        "description": "Winner of a 2016 Great Taste Award & from our local orchard. No added sugar.",
+        "price": 3.99,
+        "category": 2,
+        "image_url": "https://pxhere.com/en/photo/1579649",
+        "image": "applejuice.jpg"
+      }
+    },
+    {
+      "pk": 3,
+      "model": "products.product",
+      "fields": {
+        "sku": "gr246810003",
+        "name": "Bananas",
+        "description": "Available in bunches of 6, Fair Trade.",
+        "price": 1.50,
+        "category": 2,
+        "image_url": "https://pxhere.com/en/photo/1360400",
+        "image": "bananas.jpg"
+      }
+    },
+    {
+      "pk": 4,
+      "model": "products.product",
+      "fields": {
+        "sku": "gr246810004",
+        "name": "Berries",
+        "description": "Berries in stock are based on seasonal availability and are picked locally from the popular Carmarthen Fruit Farm. Delicious eaten as they are or for baking. Price is per 300g punnet",
+        "price": 3.50,
+        "category": 2,
+        "image_url": "https://pxhere.com/en/photo/1159521",
+        "image": "berries.jpg"
+      }
+    },
+    {
+      "pk": 5,
+      "model": "products.product",
+      "fields": {
+        "sku": "gr246810005",
+        "name": "Dahlia's Deluxe Coconut Biscuits",
+        "description": "Chewy coconut and vanilla biscuits coated in rich dark chocolate. Won Best Newcomer in 2021 and is a best seller in store. Best enjoyed with a cup of tea. Price per 200g packet.",
+        "price": 5.00,
+        "category": 4,
+        "image_url": "https://pxhere.com/en/photo/1267178",
+        "image": "biscuits.jpg"
+      }
+    },
+    {
+      "pk": 6,
+      "model": "products.product",
+      "fields": {
+        "sku": "gr246810006",
+        "name": "Black Mountain Blue Cheese",
+        "description": "Creamy, well balanced variety aged in a cave in the Black Mountain, Carmarthenshire. Delicious as is on crackers but particularly excellent for cooking.",
+        "price": 6.75,
+        "category": 3,
+        "image_url": "https://pxhere.com/en/photo/30722",
+        "image": "bluecheese.jpg"
+      }
+    },
+    {
+      "pk": 7,
+      "model": "products.product",
+      "fields": {
+        "sku": "gr246810007",
+        "name": "Caws Ceredigion Brie",
+        "description": "A local favourite, full-flavoured cheese.",
+        "price": 4.80,
+        "category": 3,
+        "image_url": "https://pxhere.com/en/photo/1158330",
+        "image": "brie.jpg"
+      }
+    },
+    {
+      "pk": 8,
+      "model": "products.product",
+      "fields": {
+        "sku": "gr246810008",
+        "name": "Broccoli",
+        "description": "Broccoli sold per stalk.",
+        "price": 0.90,
+        "category": 2,
+        "image_url": "https://pxhere.com/en/photo/1048649",
+        "image": "broccoli.jpg"
+      }
+    },
+    {
+      "pk": 9,
+      "model": "products.product",
+      "fields": {
+        "sku": "gr246810009",
+        "name": "Burry Dairy Slightly Salted Butter",
+        "description": "Carmarthenshire's largest dairy farm provides us with their freshly churned butter. Sold in 250g blocks. Wonderful as is on fresh bread, also works well in cooking and baking.",
+        "price": 3.99,
+        "category": 3,
+        "image_url": "https://pxhere.com/en/photo/606569",
+        "image": "butter.jpg"
+      }
+    },
+    {
+      "pk": 10,
+      "model": "products.product",
+      "fields": {
+        "sku": "gr246810010",
+        "name": "Caws Ceredigion Mature Cheddar",
+        "description": "This locally sourced cheese has won multiple national awards for it's flavour. Is just as delicious on a cracker as it is in a cheese toastie with a dash of Worcestershire Sauce.",
+        "price": 3.75,
+        "category": 3,
+        "image_url": "https://pxhere.com/en/photo/1158281",
+        "image": "cheddar.jpg"
+      }
+    },
+    {
+      "pk": 11,
+      "model": "products.product",
+      "fields": {
+        "sku": "gr246810011",
+        "name": "Black Gold Chocolate",
+        "description": "Fair Trade chocolate produced within a restored old mining office within Drefach. Varieties available include: Dark, Milk, Hazelnut, Coffee, Pretzel. Black Gold are a small new business gaining traction for the quality of their chocolate. 150g per pack.",
+        "price": 3.79,
+        "category": 4,
+        "image_url": "https://pxhere.com/en/photo/898525",
+        "image": "chocolate.jpg"
+      }
+    },
+    {
+      "pk": 12,
+      "model": "products.product",
+      "fields": {
+        "sku": "gr246810012",
+        "name": "Tumbledown Coffee Beans",
+        "description": "Tumbledown Coffee is a small coffee roasters in Tumble, near Llanelli. Batches vary per season, meaning there is always a new brew to try. Can be ground here on request.",
+        "price": 6.50,
+        "category": 1,
+        "image_url": "https://pxhere.com/en/photo/633541",
+        "image": "coffee.jpg"
+      }
+    },
+    {
+      "pk": 13,
+      "model": "products.product",
+      "fields": {
+        "sku": "gr246810013",
+        "name": "Popty Aberporth Crackers",
+        "description": "Now sold across the county, the bestseller cracker collection includes: Sea Salt & Rosemary; Cracked Black Pepper; Rye; Poppy & Flax. Baked two streets awa from our shop. 300g pack",
+        "price": 6.75,
+        "category": 4,
+        "image_url": "https://pxhere.com/en/photo/1247287",
+        "image": "crackers.jpg"
+      }
+    },
+    {
+      "pk": 14,
+      "model": "products.product",
+      "fields": {
+        "sku": "gr246810014",
+        "name": "Carmarthen Bay Crisps Multipack",
+        "description": "Favoured locally for their crunch and thick cut, flavours include: Ready Salted, Black Pepper, Cheese & Onion. Comes in pack of 6. ",
+        "price": 1.99,
+        "category": 4,
+        "image_url": "https://pxhere.com/en/photo/1333331",
+        "image": "crisps.jpg"
+      }
+    },
+    {
+      "pk": 15,
+      "model": "products.product",
+      "fields": {
+        "sku": "gr246810015",
+        "name": "Eggs",
+        "description": "Fresh, mixed size free range eggs from local providers. We use a range of local farmers and smallholdings to source our eggs. Sold by the half dozen.",
+        "price": 2.00,
+        "category": 1,
+        "image_url": "https://pxhere.com/en/photo/629033",
+        "image": "eggs.jpg"
+      }
+    },
+    {
+      "pk": 16,
+      "model": "products.product",
+      "fields": {
+        "sku": "gr246810016",
+        "name": "Ferryside Honey",
+        "description": "A sweet honey made in Ferryside, Carmarthenshire, where the bees thrive on the coastal wildflowers. Best served on hot toast.",
+        "price": 8.99,
+        "category": 1,
+        "image_url": "https://pxhere.com/en/photo/964038",
+        "image": "honey.jpg"
+      }
+    },
+    {
+      "pk": 17,
+      "model": "products.product",
+      "fields": {
+        "sku": "gr246810017",
+        "name": "Carmarthen Fruit Farm Strawberry Jam",
+        "description": "Delicious sweet jam made from the strawberries grown locally at Carmarthen Fruit Farm. Great for toast and scones.",
+        "price": 3.85,
+        "category": 1,
+        "image_url": "https://pxhere.com/en/photo/760768",
+        "image": "jam.jpg"
+      }
+    },
+    {
+      "pk": 18,
+      "model": "products.product",
+      "fields": {
+        "sku": "gr246810018",
+        "name": "Burry Dairy Whole Milk",
+        "description": "Fresh milk from the Burry Dairy farm. Bottles are sold per pint.",
+        "price": 1.49,
+        "category": 3,
+        "image_url": "https://pxhere.com/en/photo/648665",
+        "image": "milk.jpg"
+      }
+    },
+    {
+      "pk": 19,
+      "model": "products.product",
+      "fields": {
+        "sku": "gr246810019",
+        "name": "Burry Dairy Semi-Skimmed Milk",
+        "description": "Fresh milk from the Burry Dairy farm. Bottles are sold per pint.",
+        "price": 1.49,
+        "category": 3,
+        "image_url": "https://pxhere.com/en/photo/648665",
+        "image": "milk.jpg"
+      }
+    },
+    {
+      "pk":20,
+      "model": "products.product",
+      "fields": {
+        "sku": "gr246810020",
+        "name": "Burry Dairy Skimmed Milk",
+        "description": "Fresh milk from the Burry Dairy farm. Bottles are sold per pint.",
+        "price": 1.49,
+        "category": 3,
+        "image_url": "https://pxhere.com/en/photo/648665",
+        "image": "milk.jpg"
+      }
+    },
+    {
+      "pk": 21,
+      "model": "products.product",
+      "fields": {
+        "sku": "gr246810021",
+        "name": "Oranges",
+        "description": "Price per orange.",
+        "price": 0.60,
+        "category": 2,
+        "image_url": "https://pxhere.com/en/photo/941567",
+        "image": "orange.jpg"
+      }
+    },
+    {
+      "pk": 22,
+      "model": "products.product",
+      "fields": {
+        "sku": "gr246810022",
+        "name": "Orange Juice",
+        "description": "Squeezed and poured in store for a fresh breakfast drink. Contains pulp. Price per litre.",
+        "price": 4.25,
+        "category": 2,
+        "image_url": "https://pxhere.com/en/photo/1373092",
+        "image": "orangejuice.jpg"
+      }
+    },
+    {
+      "pk": 23,
+      "model": "products.product",
+      "fields": {
+        "sku": "gr246810023",
+        "name": "Pasta",
+        "description": "Our pasta selection varies depending on our supplier's stock - we only source good quality pasta from artisanal producers.",
+        "price": 7.99,
+        "category": 1,
+        "image_url": "https://pxhere.com/en/photo/1091335",
+        "image": "pasta.jpg"
+      }
+    },
+    {
+      "pk": 24,
+      "model": "products.product",
+      "fields": {
+        "sku": "gr246810024",
+        "name": "Popty Aberporth Seeded Bread",
+        "description": "The bakery's ever popular loaf baked with mixed grain and seeds. Wonderful as a sandwich loaf or as an accompaniment to soup. Sold unsliced.",
+        "price": 2.00,
+        "category": 1,
+        "image_url": "https://pxhere.com/en/photo/1073302",
+        "image": "seededbread.jpg"
+      }
+    },
+    {
+      "pk": 25,
+      "model": "products.product",
+      "fields": {
+        "sku": "gr246810025",
+        "name": "Popty Aberporth Sourdough",
+        "description": "Sourdough bread loaf.",
+        "price": 3.50,
+        "category": 1,
+        "image_url": "https://pxhere.com/en/photo/1073302",
+        "image": "sourdough.jpg"
+      }
+    },
+    {
+      "pk": 26,
+      "model": "products.product",
+      "fields": {
+        "sku": "gr246810026",
+        "name": "Granulated Sugar",
+        "description": "400g pack of white sugar cubes.",
+        "price": 2.75,
+        "category": 1,
+        "image_url": "https://pxhere.com/en/photo/920092",
+        "image": "sugar.jpg"
+      }
+    },
+    {
+      "pk": 27,
+      "model": "products.product",
+      "fields": {
+        "sku": "gr246810027",
+        "name": "Burry Brew Tea",
+        "description": "English Breakfast Tea, box of 100 teabags.",
+        "price": 3.00,
+        "category": 1,
+        "image_url": "https://pxhere.com/en/photo/1156760",
+        "image": "teabags.jpg"
+      }
+    },
+    {
+      "pk": 28,
+      "model": "products.product",
+      "fields": {
+        "sku": "gr246810028",
+        "name": "Vine Ripened Tomatoes",
+        "description": "Suitable for salads and cooking. Price per 200g pack.",
+        "price": 2.39,
+        "category": 2,
+        "image_url": "https://pxhere.com/en/photo/1362673",
+        "image": "tomatoes.jpg"
+      }
+    },
+    {
+      "pk": 29,
+      "model": "products.product",
+      "fields": {
+        "sku": "gr246810029",
+        "name": "Veg Box",
+        "description": "Back by popular demand! A large box of veg, both for cooking and salads, varying depending on time of year. Excellent for anyone interested in eating fresh and seasonal. Please be aware the contents of the box may change week to week!",
+        "price": 10.00,
+        "category": 2,
+        "image_url": "https://pxhere.com/en/photo/879579",
+        "image": "vegbox.jpg"
+      }
+    },
+    {
+      "pk": 30,
+      "model": "products.product",
+      "fields": {
+        "sku": "gr246810030",
+        "name": "Popty Aberporth White Sandwich Loaf",
+        "description": "Soft white bread ideal for toast and sandwiches, this is the bakery's bestseller.",
+        "price": 1.09,
+        "category": 1,
+        "image_url": "https://pxhere.com/en/photo/359031",
+        "image": "whitebread.jpg"
+      }
+    },
+    {
+      "pk": 31,
+      "model": "products.product",
+      "fields": {
+        "sku": "gr246810031",
+        "name": "Burry Dairy Natural Yoghurt",
+        "description": "Thick and creamy yoghurt, produced locally with milk from Burry Dairy cows.",
+        "price": 1.19,
+        "category": 3,
+        "image_url": "https://pxhere.com/en/photo/1071139",
+        "image": "yoghurt.jpg"
+      }
+    }
+  ]
