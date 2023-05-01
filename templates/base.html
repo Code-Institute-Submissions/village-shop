@@ -98,7 +98,7 @@
                   <li><a class="dropdown-item" href="{% url 'products' %}?sort=category&direction=asc">View By Category</a></li>
               </ul>
               </li>
-              <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
+              <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
                   <div class="text-end">
                       <div><i class="fas fa-shopping-bag fa-m"></i></div>
                       <p>
