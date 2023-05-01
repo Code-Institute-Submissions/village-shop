@@ -102,8 +102,8 @@
                   <div class="text-end">
                       <div><i class="fas fa-shopping-bag fa-m"></i></div>
                       <p>
-                          {% if grand_total %}
-                              ${{ grand_total|floatformat:2 }}
+                          {% if total %}
+                              £{{ total|floatformat:2 }}
                           {% else %}
                               £0.00
                           {% endif %}
