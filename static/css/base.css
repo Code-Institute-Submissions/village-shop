@@ -75,3 +75,7 @@ a.category-badge > span.badge:hover {
     margin-left: -10%;
     padding: 1% 0;
 }
+
+.shop-heading{
+    font-family: 'Prata', 'Times New Roman', Times, serif;
+}

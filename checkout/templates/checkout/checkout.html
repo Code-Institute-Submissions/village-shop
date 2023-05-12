@@ -7,13 +7,13 @@
         <div class="row">
             <div class="col">
                 <hr>
-                <h2>Checkout</h2>
+                <h2 class="shop-heading">Checkout</h2>
                 <hr>
             </div>
         </div>
         <div class="row">
             <div class="col-12 col-lg-6 order-lg-last mb-5">
-                <p class="text-muted">Order Summary ({{ product_count }})</p>
+                <p class="text-muted shop-heading">Order Summary ({{ product_count }})</p>
                 <div class="row">
                     <div class="col-7 offset-2">
                         <p class="mb-1 mt-0 small text-muted">Item</p>
@@ -64,16 +64,23 @@
                     <fieldset class="rounded px-3 mb-5">
                         <legend class="fieldset-label small text-black px-2 w-auto">Details</legend>
                         {{ order_form.full_name | as_crispy_field }}
+                        <br>
                         {{ order_form.email | as_crispy_field }}
                     </fieldset>
                     <fieldset class="rounded px-3 mb-5">
                         <legend class="fieldset-label small text-black px-2 w-auto">Address</legend>
                         {{ order_form.phone_number | as_crispy_field }}
+                        <br>
                         {{ order_form.country | as_crispy_field }}
+                        <br>
                         {{ order_form.postcode | as_crispy_field }}
+                        <br>
                         {{ order_form.town_or_city | as_crispy_field }}
+                        <br>
                         {{ order_form.street_address1 | as_crispy_field }}
+                        <br>
                         {{ order_form.street_address2 | as_crispy_field }}
+                        <br>
                         {{ order_form.county | as_crispy_field }}
                         <div class="form-check form-check-inline float-right mr-0">
                             {% if user.is_authenticated %}
@@ -82,6 +89,7 @@
                             {% else %}
                                 <label for="id-save-info" class="form-check-label">
                                     <a href="{% url 'account_signup' %}" class="text-info">Create an account</a>
+                                    <br>
                                     <a href="{% url 'account_login' %}" class="text-info">Login</a> to save this information.
                                 </label>
                             {% endif %}
