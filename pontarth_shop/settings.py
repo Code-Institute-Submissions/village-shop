@@ -14,6 +14,9 @@ from pathlib import Path
 from django.contrib.messages import constants as messages
 import os
 
+if os.path.exists("env.py"):
+    import env
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -185,6 +188,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Stripe
 STRIPE_CURRENCY = 'gbp'
-STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', 'pk_test_51N7F5HL4vQV3gL48EzSUe3YV1PdilzzcCrC4RbO392IeUTKklA4irCNk5bWHDFtNm3G4Ko7tAnfqiJ5wsCzL0IW4002siCy5TX')
-STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', 'sk_test_51N7F5HL4vQV3gL48SLNw65S7A89FNrkB6EO1hzrmFMR248sS2FiOq7P1eW0Eg4yT5m3ehtGqky3bbLAHEyaoqb5U00cQtwrreM')
-STRIPE_WH_SECRET = os.getenv('')
+STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
+STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
+STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
