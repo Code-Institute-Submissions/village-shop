@@ -1,0 +1,15 @@
+Hello {{ order.full_name }}
+
+Thank you for shopping at Pontarth Shop. This is confirmation of your order:
+
+Order Number: {{ order.order_number }}
+Order Date: {{order.date }}
+
+Order Total: £{{ order.order_total }}
+
+ Your order will be available for collection within half an hour, during our opening hours:
+ Mon - Sat: 9am - 6pm
+
+ Kind regards,
+
+ Pontarth Village Shop
