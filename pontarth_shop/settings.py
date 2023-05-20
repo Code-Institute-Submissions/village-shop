@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-mxpp^t)9h3hie%f+(yn*2vk%)a)6gjntf!&xg4$0+srrjc1l2k
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-vicgoodall-village-shop-iy9o4rj3m6.us2.codeanyapp.com', 'localhost']
+ALLOWED_HOSTS = ['8000-vicgoodall-villageshop-5c02yeryn6s.ws-eu97.gitpod.io', 'localhost']
 
 # Message tags for css
 
