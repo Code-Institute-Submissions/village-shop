@@ -1,0 +1,48 @@
+{% extends "base.html" %} 
+{% load static %} 
+
+{% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col text-center">
+                <h2> Events </h2>
+                <hr class="w-50 mb-1">
+            </div>
+        </div>
+        <div class="row">
+            <div class="event-container col-10 offset-1">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+                        <div class="event-details-container mb-5 mt-md-5">
+                            <p class="mb-0">{{ event.title }}</p>
+                            <p class="lead mb-0 text-left font-weight-bold">{{ event.date }}</p>
+                            <p class="lead mb-0 text-left font-weight-bold">{{ event.time }}</p>
+                            <p class="mt-3">{{ event.description }}</p>
+                            <form class="form" action="{% url 'register' event.id %}" method="POST">
+                                {% csrf_token %}
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <form method="POST" action="{% url 'register' %}" class="form mb-2" enctype="multipart/form-data">
+                                        {% csrf_token %}
+                                        {% for field in form %}
+                                            {% if field.name != 'image' %}
+                                                {{ field | as_crispy_field }}
+                                            {% else %}
+                                                {{ field }}
+                                            {% endif %}
+                                        {% endfor %}
+                                        <div class="text-right">
+                                            <a href="{% url 'latest' %}" class="btn btn-outline-black">Back</a>
+                                            <button class="btn btn-black" type="submit">Register</button>
+                                        </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %} 
