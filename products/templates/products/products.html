@@ -4,8 +4,8 @@
 {% block content %}
     <div class="container-fluid">
         <div class="row">
-            <div class="col text-center">
-                <h2> Products </h2>
+            <div class="col text-center products-banner">
+                <h2 class="shop-heading" > Products </h2>
                 {% for c in current_categories %}
                     <a href="{% url 'products' %}?category={{ c.name }}" class="category-badge text-decoration-none">
                         <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
@@ -53,19 +53,20 @@
                                 </a>
                                 {% endif %}
                                 <div class="card-body">
-                                    <p class="card-text">{{ product.name }}</p>
+                                    <p class="card-text shop-heading">{{ product.name }}</p>
                                 </div>
                                 <div class="card-footer">
                                     <div class="row">
                                         <div class="col">
                                             <p class="lead txt-left">£{{ product.price }}</p>
                                             {% if product.category %}
-                                                <a href="" class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">{{ product.category.friendly_name }}</a>
+                                                <a href="" class="text-muted shop-heading" href="{% url 'products' %}?category={{ product.category.name }}">{{ product.category.friendly_name }}</a>
                                             {% endif %}
+                                            <br>
                                             {% if request.user.is_superuser %}
                                                 <small class="ml-3">
-                                                    <a href="{% url 'edit_product' product.id %}">Edit</a>
-                                                    <a href="{% url 'delete_product' product.id %}">Delete</a>
+                                                    <a class="edit" href="{% url 'edit_product' product.id %}">Edit</a>
+                                                    <a class="delete" href="{% url 'delete_product' product.id %}">Delete</a>
                                                 </small>
                                             {% endif %}
                                         </div>

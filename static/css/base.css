@@ -18,6 +18,11 @@
     font-family: 'Prata', 'Times New Roman', Times, serif;
 }
 
+.subtitle {
+    color: white;
+    font-family: 'Prata', 'Times New Roman', Times, serif;
+}
+
 
 /*----------------------------------------------------------------------------------- Page formatting */
 
@@ -57,6 +62,10 @@ html, body {
     width: 100vw;
     object-fit: cover;
     object-position: right 90%;
+}
+
+.products-banner{
+    margin: 2% 0;
 }
 
 /*----------------------------------------------------------------------------------- Buttons & Links */
@@ -117,6 +126,27 @@ a.category-badge > span.badge:hover {
     background-color: #dc3545;
     border-color: #dc3545;
     border-radius: 0;
+}
+
+.edit {
+    color: black;
+    font-size: 12pt;
+    font-family: 'Times New Roman', Times, serif;
+    padding-right: 1%;
+}
+
+.edit:hover {
+    color: green;
+}
+
+.delete {
+    color: black;
+    font-size: 12pt;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.delete:hover {
+    color: red;
 }
 
 /*----------------------------------------------------------------------------------- Messages */

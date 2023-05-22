@@ -89,7 +89,7 @@ def edit_event(request, event_id):
             messages.error(request, 'Failed to update. Please check all details are correct and retry')
     else:
         form = EventForm(instance=event)
-        messages.info(request, f'You are editing {event.title}')
+        messages.info(request, f'You are editing: {event.title}')
 
     template = 'events/edit_event.html'
     context = {
@@ -156,7 +156,7 @@ def edit_blog(request, post_id):
             messages.error(request, 'Failed to update blog post. Please ensure the form is valid.')
     else:
         form = PostForm(instance=post)
-        messages.info(request, f'You are editing {post.title}')
+        messages.info(request, f'You are editing: {post.title}')
 
     template = 'events/edit_post.html'
     context = {
