@@ -1,33 +1,39 @@
 {% extends "base.html" %} 
 {% load static %} 
 
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'events/css/event.css' %}">
+{% endblock %}
+
 {% block content %}
     <div class="container-fluid">
-        <row class="blog-header">
-            <h2>What's On at Pontarth</h2>
-        </row>
+        <div class="row">
+            <div id="blog-banner">
+                <h2 id="blog-header">What's On at Pontarth</h2>
+            </div>
+        </div>
         <div class="row">
             <div class="col-8">
                 {% for post in posts %}
-                    <div class="card" style="height: 30%">
-                        <div class="card-body">
+                    <div class="card">
+                        <div class="card-body blog-card">
                             <h2 class="card-text" id="post-title">{{ post.title }}</h2>
-                            <h6>{{ post.date_added }}</h6>
+                            <h6 id="blog-date">{{ post.date_added }}</h6>
                             {% if post.image %}
-                                <img class="card-image-top img-fluid img-thumbnail" style="object-fit: cover; max-height: 320px"  src="{{ post.image.url }}" alt="{{ post.title }}">
+                                <img class="img-fluid centre" style="object-fit: cover; max-height: 400px"  src="{{ post.image.url }}" alt="{{ post.title }}">
                             {% else %}
-                                <img class="card-image-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ post.title }}">
+                                <img class="img-fluid centre" src="{{ MEDIA_URL }}noimage.png" alt="{{ post.title }}">
                             {% endif %}
-                            <p>{{ post.intro }}</p>
-                            <p>{{ post.article }}</p>
+                            <p class="blogpost">{{ post.intro }}</p>
+                            <p class="blogpost">{{ post.article }}</p>
                         </div>
                         <div class="card-footer">
                             <div class="row">
                                 <div class="col">
                                     {% if request.user.is_superuser %}
                                         <small class="ml-3">
-                                            <a href="{% url 'edit_blog' post.id %}">Edit</a>
-                                            <a href="{% url 'delete_blog' post.id  %}">Delete</a>
+                                            <a class="edit" href="{% url 'edit_blog' post.id %}">Edit</a>
+                                            <a class="delete" href="{% url 'delete_blog' post.id  %}">Delete</a>
                                         </small>
                                     {% endif %}
                                 </div>
@@ -38,19 +44,24 @@
             </div>
             <div class="col">
                 {% for event in events %}
-                    <div class="card" style="height: 30%">
+                    <div class="card event-card" style="height: auto">
                         <div class="card-body">
+                            {% if event.image %}
+                                <img class="img-fluid card-image-top" src="{{ event.image.url }}" alt="{{ event.title }}">
+                            {% else %}
+                                <img class="img-fluid centre card-image-top" src="{{ MEDIA_URL }}noimage.png" alt="{{ event.title }}">
+                            {% endif %}
                             <a class="card-text" id="event-title" href="{% url 'event_listing' event.id %}">{{ event.title }}</a>
                         </div>
                         <div class="card-footer">
                             <div class="row">
                                 <div class="col">
-                                    <p class="lead txt-left">{{ event.event_date }}</p>
-                                    <p class="lead txt-left">{{ event.time }}</p>
+                                    <p class="lead txt-left event-detail">{{ event.event_date }}</p>
+                                    <p class="lead txt-left event-detail">{{ event.time }}</p>
                                         {% if request.user.is_superuser %}
                                             <small class="ml-3">
-                                                <a href="{% url 'edit_event' event.id %}">Edit</a>
-                                                <a href="{% url 'delete_event' event.id %}">Delete</a>
+                                                <a class="edit" href="{% url 'edit_event' event.id %}">Edit</a>
+                                                <a class="delete" href="{% url 'delete_event' event.id %}">Delete</a>
                                             </small>
                                         {% endif %}
                                 </div>

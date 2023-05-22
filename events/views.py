@@ -10,7 +10,8 @@ def events(request):
     """ A view to show all posts """
 
     events = Event.objects.all()
-    posts = Post.objects.all()
+    # blogs will be listed from newest to oldest
+    posts = Post.objects.all().order_by('-date_added')
 
     context = {
         'events': events,
@@ -144,7 +145,7 @@ def edit_blog(request, post_id):
         messages.error(request, 'You do not have authorisation to access this page.')
         return redirect(reverse('home'))
 
-    post = get_object_or_404(Post)
+    post = get_object_or_404(Post, pk=post_id)
     if request.method == 'POST':
         form = PostForm(request.POST, request.FILES, instance=post)
         if form.is_valid():
@@ -167,13 +168,13 @@ def edit_blog(request, post_id):
 
 
 @login_required
-def delete_blog(request):
+def delete_blog(request, post_id):
     """ Delete a blog post """
     if not request.user.is_superuser:
         messages.error(request, 'You do not have authorisation to access this page.')
         return redirect(reverse('home'))
 
-    blog = get_object_or_404(Post)
+    blog = get_object_or_404(Post, pk=post_id)
     blog.delete()
     messages.success(request, 'Blog post deleted.')
     return redirect(reverse('events'))

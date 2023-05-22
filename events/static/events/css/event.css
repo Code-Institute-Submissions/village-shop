@@ -1,0 +1,107 @@
+#blog-header {
+    color: black;
+    font-family: 'Prata', 'Times New Roman', Times, serif;
+    font-size: 36pt;
+}
+
+#blog-banner {
+    margin: 2% 0 2% 3%;
+}
+
+#post-title {
+    color: black;
+    font-family: 'Prata', 'Times New Roman', Times, serif;
+}
+
+#blog-date {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 11pt;
+    margin-left: 2%;
+}
+
+.blogpost {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12pt;
+    margin-left: 2%;
+}
+
+.centre {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-bottom: 2%;
+  }
+
+.blog-card {
+    border: 1px solid black;
+    background-color: whitesmoke;
+}
+
+#event-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 26pt;
+    margin-left: 4%;
+    color: navy;
+}
+
+#event-title:hover {
+    color: black;
+}
+
+.event-card {
+    margin-bottom: 4%;
+    border: 1px solid black;
+}
+
+.edit {
+    color: black;
+    font-size: 12pt;
+    font-family: 'Times New Roman', Times, serif;
+    padding-right: 1%;
+}
+
+.edit:hover {
+    color: green;
+}
+
+.delete {
+    color: black;
+    font-size: 12pt;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.delete:hover {
+    color: red;
+}
+
+.event-detail {
+    color: black;
+    font-size: 16pt;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#event-page-title {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 32pt;
+}
+
+#event-head {
+    color: black;
+    font-family: 'Prata', 'Times New Roman', Times, serif;
+    font-size: 36pt;
+    margin: 2% 0;
+}
+
+.event-desc {
+    color: black;
+    font-size: 16pt;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.event-email {
+    color: black;
+    font-size: 12pt;
+    font-family: 'Times New Roman', Times, serif;
+}
