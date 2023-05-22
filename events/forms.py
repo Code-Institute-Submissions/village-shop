@@ -1,5 +1,5 @@
 from django import forms
-from .models import Event, Attendee
+from .models import Event, Post
 
 
 class EventForm(forms.ModelForm):
