@@ -1,0 +1,103 @@
+{% extends "base.html" %} 
+{% load static %} 
+
+{% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                {% for post in posts %}
+                    <div class="card" style="height: 30%">
+                        <div class="card-body">
+                            <h2 class="card-text" id="post-title">{{ post.title }}</h2>
+                            <h6>{{ post.date_added }}</h6>
+                            {{ post.image }}
+                            <p>{{ post. intro }}</p>
+                            <p>{{ post.article }}</p>
+                        </div>
+                        <div class="card-footer">
+                        <div class="row">
+                            <div class="col">
+                                {% if request.user.is_superuser %}
+                                    <small class="ml-3">
+                                        <a href="{% url 'edit_event' event.id %}">Edit</a>
+                                        <a href="{% url 'delete_event' event.id %}">Delete</a>
+                                    </small>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+
+                    {% if forloop.counter|divisibleby:1 %}
+                        <div class="col-12 d-sm-none mb-5">
+                            <hr>
+                        </div>
+                    {% endif %}
+
+                    {% if forloop.counter|divisibleby:2 %}
+                        <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
+                            <hr>
+                        </div>
+                    {% endif %}
+
+                    {% if forloop.counter|divisibleby:3 %}
+                        <div class="col-12 d-none d-lg-block d-xl-none mb-5">
+                            <hr>
+                        </div>
+                    {% endif %}
+
+                    {% if forloop.counter|divisibleby:4 %}
+                        <div class="col-12 d-none d-xl-block mb-5">
+                            <hr>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                {% for event in events %}
+                    <div class="card" style="height: 30%">
+                        <div class="card-body">
+                            <a class="card-text" id="event-title" href="{% url 'event_listing' event.id %}">{{ event.title }}</a>
+                        </div>
+                        <div class="card-footer">
+                        <div class="row">
+                            <div class="col">
+                                <p class="lead txt-left">{{ event.event_date }}</p>
+                                <p class="lead txt-left">{{ event.time }}</p>
+                                    {% if request.user.is_superuser %}
+                                        <small class="ml-3">
+                                            <a href="{% url 'edit_event' event.id %}">Edit</a>
+                                            <a href="{% url 'delete_event' event.id %}">Delete</a>
+                                        </small>
+                                    {% endif %}
+                            </div>
+                        </div>
+                    </div>
+
+                    {% if forloop.counter|divisibleby:1 %}
+                        <div class="col-12 d-sm-none mb-5">
+                            <hr>
+                        </div>
+                    {% endif %}
+
+                    {% if forloop.counter|divisibleby:2 %}
+                        <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
+                            <hr>
+                        </div>
+                    {% endif %}
+
+                    {% if forloop.counter|divisibleby:3 %}
+                        <div class="col-12 d-none d-lg-block d-xl-none mb-5">
+                            <hr>
+                        </div>
+                    {% endif %}
+
+                    {% if forloop.counter|divisibleby:4 %}
+                        <div class="col-12 d-none d-xl-block mb-5">
+                            <hr>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %} 

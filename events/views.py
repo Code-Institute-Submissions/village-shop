@@ -3,16 +3,16 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 
 from .models import Event, Attendee
-from .forms import EventForm
+from .forms import EventForm, AttendeeForm
 
 
-def latest(request):
+def events(request):
     """ A view to show all posts """
 
     events = Event.objects.all()
 
     context = {
-        'products': products,
+        'events': events,
     }
 
     return render(request, 'events/latest.html', context)
@@ -21,7 +21,7 @@ def latest(request):
 def event_listing(request, event_id):
     """ A view to show an event's information """
 
-    product = get_object_or_404(Event, pk=product_id)
+    event = get_object_or_404(Event, pk=event_id)
 
     context = {
         'event': event,
@@ -48,7 +48,7 @@ def add_event(request):
     else:
         form = EventForm()
 
-    template = 'latest/add_event.html'
+    template = 'events/add_event.html'
     context = {
         'form': form,
     }
@@ -59,13 +59,13 @@ def add_event(request):
 def event_listing(request, event_id):
     """ A view to show full event details """
 
-    event = get_object_or_404(Event, pk=product_id)
+    event = get_object_or_404(Event, pk=event_id)
 
     context = {
         'event': event,
     }
 
-    return render(request, 'latest/event_listing.html', context)
+    return render(request, 'events/event_listing.html', context)
 
 
 @login_required
@@ -75,7 +75,7 @@ def edit_event(request, event_id):
         messages.error(request, 'You do not have authorisation to access this page.')
         return redirect(reverse('home'))
 
-    event = get_object_or_404(Product, pk=event_id)
+    event = get_object_or_404(Event, pk=event_id)
     if request.method == 'POST':
         event = EventForm(request.POST, request.FILES, instance=event)
         if form.is_valid():
@@ -88,7 +88,7 @@ def edit_event(request, event_id):
         form = EventForm(instance=event)
         messages.info(request, f'You are editing {event.title}')
 
-    template = 'latest/edit_event.html'
+    template = 'events/edit_event.html'
     context = {
         'form': form,
         'event': event,
@@ -98,7 +98,7 @@ def edit_event(request, event_id):
 
 @login_required
 def delete_event(request, event_id):
-    """Delete product """
+    """Delete event """
     if not request.user.is_superuser:
         messages.error(request, 'You do not have authorisation to access this page.')
         return redirect(reverse('home'))
@@ -106,26 +106,72 @@ def delete_event(request, event_id):
     event = get_object_or_404(Event, pk=event_id)
     event.delete()
     messages.success(request, 'Event deleted.')
-    return redirect(reverse('latest'))
+    return redirect(reverse('events'))
 
 
-def register(request, event=event_id):
-    """ Register attendance for event """
+@login_required
+def add_blog(request):
+    """ Add a blog post to the blog """
+    if not request.user.is_superuser:
+        messages.error(request, 'Only our STILE team has access to this.')
+        return redirect(reverse('homepage'))
 
     if request.method == 'POST':
-        form = AttendeeForm(request.POST, request.FILES)
+        form = PostForm(request.POST, request.FILES)
         if form.is_valid():
-            attendee = form.save()
-            messages.success(request, 'Thank you, we have registered you successfully.')
-            return redirect(reverse('latest'))
+            post = form.save()
+            messages.success(request, 'Successfully added a blog post!')
+            return redirect(reverse('detail_post', args=[post.slug]))
         else:
-            messages.error(request, 'Registration failed. Please try again.')
+            messages.error(request, 'Failed to add the blog post. Please ensure the form is valid.')
     else:
-        form = AttendeeForm()
+        form = PostForm()
 
-    template = 'latest/event_listing.html'
+    template = 'blog/add_blog.html'
     context = {
         'form': form,
     }
 
     return render(request, template, context)
+
+
+@login_required
+def edit_blog(request):
+    """ Edit a Blog Post """
+    if not request.user.is_superuser:
+        messages.error(request, 'Only our STILE team has access to this.')
+        return redirect(reverse('homepage'))
+
+    post = get_object_or_404(Post, slug=slug)
+    if request.method == 'POST':
+        form = PostForm(request.POST, request.FILES, instance=post)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully updated blog post!')
+            return redirect(reverse('detail_post', args=[post.slug]))
+        else:
+            messages.error(request, 'Failed to update blog post. Please ensure the form is valid.')
+    else:
+        form = PostForm(instance=post)
+        messages.info(request, f'You are editing {post.title}')
+
+    template = 'blog/edit_blog.html'
+    context = {
+        'form': form,
+        'post': post,
+    }
+
+    return render(request, template, context)
+
+
+@login_required
+def delete_blog(request):
+    """ Delete a blog post """
+    if not request.user.is_superuser:
+        messages.error(request, 'You do not have authorisation to access this page.')
+        return redirect(reverse('home'))
+
+    blog = get_object_or_404(Post)
+    blog.delete()
+    messages.success(request, 'Blog post deleted.')
+    return redirect(reverse('events'))
