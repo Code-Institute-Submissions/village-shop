@@ -243,4 +243,8 @@ a.category-badge > span.badge:hover {
         background-color: black;
         padding: 5px 10px;
     }
+
+    .welcome {
+        font-size: 11px;
+    }
 }
