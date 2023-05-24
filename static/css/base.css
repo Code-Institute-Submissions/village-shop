@@ -235,10 +235,12 @@ a.category-badge > span.badge:hover {
       flex: 100%;
       max-width: 100%;
     }
+}
 
+@media(max-width: 481px) {
     .welcome-banner {
         background-color: black;
         height: 150px;
         padding: 5px 10px;
     }
-  }
+}

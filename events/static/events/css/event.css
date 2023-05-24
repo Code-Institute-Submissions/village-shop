@@ -106,7 +106,7 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 481px) {
     .full-blog {
         width: auto;
     }
