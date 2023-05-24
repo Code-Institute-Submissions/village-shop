@@ -54,7 +54,7 @@ html, body {
 .welcome-banner {
     background-color: black;
     height: 120px;
-    padding: 30px 10px;
+    padding: 20px 10px;
 }
 
 #banner {
@@ -182,7 +182,7 @@ a.category-badge > span.badge:hover {
 
 .allauth-form-inner-content p {
     margin-top: 1.5rem;
-    color: navy;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .allauth-form-inner-content input {
@@ -195,12 +195,13 @@ a.category-badge > span.badge:hover {
 }
 
 .allauth-form-inner-content input::placeholder {
-    color: navy;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .allauth-form-inner-content button,
 .allauth-form-inner-content input[type='submit'] {
 	/* btn */
+    font-family: 'Times New Roman', Times, serif;
 	display: inline-block;
     font-weight: 400;
     color: #fff;
@@ -226,7 +227,7 @@ a.category-badge > span.badge:hover {
 }
 
 .allauth-form-inner-content a {
-	color: #17a2b8; 
+	font-family: 'Times New Roman', Times, serif;
 }
 
 /* ------------------------------------------------------------------------------ Media queries*/
@@ -240,7 +241,6 @@ a.category-badge > span.badge:hover {
 @media(max-width: 481px) {
     .welcome-banner {
         background-color: black;
-        height: 150px;
         padding: 5px 10px;
     }
 }
