@@ -23,6 +23,10 @@
     font-family: 'Prata', 'Times New Roman', Times, serif;
 }
 
+.footer-font {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
 
 /*----------------------------------------------------------------------------------- Page formatting */
 
@@ -50,7 +54,7 @@ html, body {
   }
 
 .page-footer {
-    background-color: #000;
+    background-color: black;
 }
 
 /*----------------------------------------------------------------------------------- Banner */
