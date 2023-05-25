@@ -35,6 +35,8 @@ html, body {
     overflow-x: hidden;
 }
 
+/* ----------------------------- Grid Gallery Layout from W3 */
+
 .home-layout {
     display: flex;
     flex-wrap: wrap;
@@ -250,9 +252,5 @@ a.category-badge > span.badge:hover {
     .welcome-banner {
         background-color: black;
         padding: 5px 10px;
-    }
-
-    .welcome {
-        font-size: 20px;
     }
 }
