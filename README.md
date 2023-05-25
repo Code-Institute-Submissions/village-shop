@@ -256,11 +256,56 @@ else:
 # References
 
 ## Code
-- Gallery Home Page: ![W3 Schools](https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp)
-
-
+- Gallery Home Page: [W3 Schools](https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp)
 
 ## Images
+### Products
+All product images were taken from Pxhere. All but one require no further specific credit.
+[Milk](https://pxhere.com/en/photo/648665)
+[Sourdough](https://pxhere.com/en/photo/1073302)
+[Seeded loaf](https://pxhere.com/en/photo/1073302)
+[White bread by Alan Levine](https://pxhere.com/en/photo/359031)
+[Honey](https://pxhere.com/en/photo/964038)
+[Yoghurt](https://pxhere.com/en/photo/1071139)
+[Butter](https://pxhere.com/en/photo/606569)
+[Eggs](https://pxhere.com/en/photo/629033)
+[Orange juice](https://pxhere.com/en/photo/1373092)
+[Apple juice](https://pxhere.com/en/photo/1579649)
+[Coffee beans](https://pxhere.com/en/photo/633541)
+[Tea bags](https://pxhere.com/en/photo/1156760)
+[Sugar](https://pxhere.com/en/photo/920092)
+[Jam](https://pxhere.com/en/photo/760768)
+[Apples](https://pxhere.com/en/photo/781337)
+[Bananas](https://pxhere.com/en/photo/1360400)
+[Berries](https://pxhere.com/en/photo/1159521)
+[Oranges](https://pxhere.com/en/photo/941567)
+[Potatoes](https://pxhere.com/en/photo/947460)
+[Tomatoes](https://pxhere.com/en/photo/1362673)
+[Broccoli](https://pxhere.com/en/photo/1048649)
+[Veg box](https://pxhere.com/en/photo/879579)
+[Biscuits](https://pxhere.com/en/photo/1267178)
+[Chocolate](https://pxhere.com/en/photo/898525)
+[Cheddar](https://pxhere.com/en/photo/1158281)
+[Brie](https://pxhere.com/en/photo/1158330)
+[Blue cheese](https://pxhere.com/en/photo/30722)
+[Crackers](https://pxhere.com/en/photo/1247287)
+[Crisps](https://pxhere.com/en/photo/1333331)
+[Pasta](https://pxhere.com/en/photo/1091335)
+
+### Other Images
+- Bear Logo is from [Flaticon](https://www.flaticon.com/free-icon/bear_185685?term=bear&page=1&position=3&origin=tag&related_id=185685)
+- Gallery images are from Pexels:
+- [Man in apron, Antoni Shkraba](https://www.pexels.com/photo/man-wearing-an-apron-7175967/)
+- [Cheeseboard, Engin Akyurt](https://www.pexels.com/photo/food-on-brown-board-2531189/)
+- [Group working, Helena Lopes](https://www.pexels.com/photo/a-man-in-black-jacket-reading-a-book-3471028/)
+- [Paint pots, Jadson Thomas](https://www.pexels.com/photo/pain-brushes-inside-clear-plastic-cups-542556/)
+- [Brown bag, Lisa Fotios](https://www.pexels.com/photo/brown-paper-bag-1992913/)
+- [Market veg, Mark Stebnicki](https://www.pexels.com/photo/pile-of-assorted-varieties-of-vegetables-2255935/)
+- [Clay, Natallia Rak](https://www.pexels.com/photo/person-making-clay-pot-1675993/)
+- [Art Class, Rdne](https://www.pexels.com/photo/a-painter-painting-on-white-canvas-5756953/)
+- [Workshop, RFStudio](https://www.pexels.com/search/group%20discussion/)
+- [Bread, Ron Lach](https://www.pexels.com/photo/a-person-holding-the-fresh-bread-8180061/)
+- [Thread, Suzy Hazelwood](https://www.pexels.com/photo/assorted-color-button-pin-on-brown-surface-1232131/)
 
 
 ## Media
