@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 {% extends "base.html" %} 
 {% load static %} 
 {% load bag_tools %}
@@ -81,16 +82,10 @@
                             <tr>
                                 <td class="text-right" colspan="5">
                                     <a href="{% url 'products' %}" class="btn btn-outline-black">
-                                        <span class="icon">
-                                            <i class="fas fa-chevron-left"></i>
-                                        </span>
-                                        <span class="text-uppercase">Keep Shopping</span>
+                                        <span>Keep Shopping</span>
                                     </a>
                                     <a href="{% url 'checkout' %}" class="btn btn-outline-black">
-                                        <span class="icon">
-                                            <i class="fas fa-lock"></i>
-                                        </span>
-                                        <span class="text-uppercase">Secure Checkout</span>
+                                        <span>Secure Checkout</span>
                                     </a>
                                 </td>
                             </tr>
@@ -100,7 +95,6 @@
                     <p class="lead mb-5">Your bag is empty.</p>
                     <a href="{% url 'products' %}" class="btn btn-outline-black">
                         <span class="icon">
-                            <i class="fas fa-chevron-left"></i>
                         </span>
                         <span>Keep Shopping</span>
                     </a>
